@@ -10,11 +10,14 @@ jobs:
         uses: actions/checkout@v5
 
       - name: fist job
-        run: echo "This is my first Job"
+        run: |
+            echo "This is my first Job"
+            ls
+            cat README.md
 
-      - name: List the file
-        run: ls
+    #   - name: List the file
+    #     run: ls
 
-      - name: Cat the file
-        run: cat README.md
+    #   - name: Cat the file
+    #     run: cat README.md
         
