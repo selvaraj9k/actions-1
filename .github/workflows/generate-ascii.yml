@@ -1,0 +1,23 @@
+name: second Job
+
+on: push
+
+jobs:
+    first_job:
+      runs-on: ubuntu-latest
+      steps:
+      - name: checkout repo
+        uses: actions/checkout@v5
+
+      - name: fist job
+        run: |
+            echo "This is my first Job"
+            ls
+            cat README.md
+
+    #   - name: List the file
+    #     run: ls
+
+    #   - name: Cat the file
+    #     run: cat README.md
+        
